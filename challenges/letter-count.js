@@ -31,3 +31,26 @@
 */
 
 // YOUR CODE HERE
+var word = ['apple'];
+var characters = [];
+
+word.forEach(function(element) {
+  characters.push(element.split(''));
+  // .(split(''));
+  console.log(characters);
+  console.log(characters.length);
+
+  // add the first letter to an array, give it a index of 1
+  // check the second letter to see if it matches the first
+  // if it matches, add 1 to value
+  // if it doesn't match, add new key and a value of 1
+  // check the third letter to see if it mattches 1 or 2
+
+})
+
+
+// var a = ['a', 'b', 'c'];
+//
+// a.forEach(function(element) {
+//     console.log(element);
+// });
