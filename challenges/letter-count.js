@@ -31,22 +31,20 @@
 */
 
 // YOUR CODE HERE
-var word = ['apple'];
-var characters = [];
+function letterCount(string) {
+    var count = {};
+    for (var i=0; i<string.length;i++) {
+        var character = string.charAt(i);
+        if (count[character]) {
+           count[character]++;
+        } else {
+          count[character] = 1;
+        }
+    }
+    return count;
+}
 
-word.forEach(function(element) {
-  characters.push(element.split(''));
-  // .(split(''));
-  console.log(characters);
-  console.log(characters.length);
-
-  // add the first letter to an array, give it a index of 1
-  // check the second letter to see if it matches the first
-  // if it matches, add 1 to value
-  // if it doesn't match, add new key and a value of 1
-  // check the third letter to see if it mattches 1 or 2
-
-})
+letterCount("apple");
 
 
 // var a = ['a', 'b', 'c'];
