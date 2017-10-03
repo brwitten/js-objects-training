@@ -34,3 +34,15 @@
 */
 
 // YOUR CODE HERE
+
+function daysUntilDate(newDate) {
+  var currentDate = new Date();
+  var oneDay = 24*60*60*1000;
+  var diffDays = Math.round(Math.abs((currentDate.getTime() - newDate.getTime())/(oneDay)));
+}
+
+function birthdayReminder(name) {
+  
+}
+
+var birthdays = [beth:12/03/1989, bill:01/27/1960]
