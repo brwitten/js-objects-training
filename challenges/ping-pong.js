@@ -41,18 +41,26 @@
 
 var table = [{steps: 0}, null, null, null];
 
-function pingPong(table, callback) {
 
+function pingPong(t) {
+  var steps = t.find(stepLocation);
+  var arrayPlacement = t.indexOf(steps);
+  if (arrayPlacement < 3) {
+    t[arrayPlacement] = null;
+    t[arrayPlacement+1] = {steps: (arrayPlacement+1)};
+    console.log(table);
   }
+}
 
 function stepLocation(element) {
   return element !== null;
 }
 
-var steps = table.find(stepLocation);
-var arrayPlacement = table.indexOf(steps);
-console.log(arrayPlacement);
-
+console.log(table);
+pingPong(table);
+pingPong(table);
+pingPong(table);
+console.log(table);
 
 // stepLocation(table);
 
