@@ -47,13 +47,13 @@
 // YOUR CODE HERE
 
 function parseQueryString(string) {
-  // * An equals sign (`=`) separates a *key* on the left from a *value* on the right.
-  var equalParse = string.split("=");
-  // * An ampersand (`&`) separates key-value pairs from each other.
   var ampersandParse = string.split("&");
-  // * All keys and values should be parsed as Strings.
-  String(equalParse);
-  String(ampersandParse);
-  // * The query string will not contain spaces.
-
+  var outputObject = {};
+  for (var i = 0; i < ampersandParse.length; i++) {
+    var split = ampersandParse[i].split("=");
+    var left = split[0];
+    var right = split[1];
+    outputObject[left] = right;
+  }
+ return outputObject
 }
