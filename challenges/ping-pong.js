@@ -38,3 +38,26 @@
 */
 
 // YOUR CODE HERE
+
+var table = [{steps: 0}, null, null, null];
+var steps = 0;
+var interval = 1;
+
+function pingPong(table, callback) {
+
+  }
+
+function stepLocation(element) {
+  return element !== null;
+}
+
+table.find(stepLocation);
+
+// stepLocation(table);
+
+
+// function isBigEnough(element) {
+//   return element >= 15;
+// }
+
+// [12, 5, 8, 130, 44].find(isBigEnough); // 130
