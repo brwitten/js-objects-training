@@ -40,8 +40,6 @@
 // YOUR CODE HERE
 
 var table = [{steps: 0}, null, null, null];
-var steps = 0;
-var interval = 1;
 
 function pingPong(table, callback) {
 
@@ -51,7 +49,10 @@ function stepLocation(element) {
   return element !== null;
 }
 
-table.find(stepLocation);
+var steps = table.find(stepLocation);
+var arrayPlacement = table.indexOf(steps);
+console.log(arrayPlacement);
+
 
 // stepLocation(table);
 
